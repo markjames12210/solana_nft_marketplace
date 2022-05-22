@@ -1,0 +1,114 @@
+section.ant-layout {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+header.ant-layout-header.App-Bar {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
+
+footer.ant-layout-footer {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.ant-layout-sider {
+  background-color: unset;
+}
+
+a:link {
+  color: #b480eb;
+}
+a:visited {
+  color: #b480eb;
+}
+a:hover {
+  color: #b480eb;
+}
+a:active {
+  color: #b480eb;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: -16px;
+}
+
+.my-masonry-grid_column {
+  padding-left: 16px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}
+
+/* Optional, different gutter size on mobile */
+@media (max-width: 800px) {
+  .my-masonry-grid {
+    margin-left: -15px; /* gutter size offset */
+  }
+  .my-masonry-grid_column {
+    padding-left: 15px; /* gutter size offset */
+  }
+  .my-masonry-grid_column > div {
+    margin-bottom: 15px; /* space between items */
+  }
+}
+
+.ant-card-body {
+  padding: 0;
+}
+
+.ant-steps-item-container {
+  padding-top: 2px;
+}
+
+.ant-steps-item-tail {
+  top: 3px !important;
+  margin-left: 33px !important;
+}
+
+.ant-steps-item-content {
+  width: 70px !important;
+}
+
+.ant-steps-item-icon {
+  margin-left: 31px !important;
+}
+
+.ant-steps-item-content {
+  margin-left: 0px;
+}
+
+@media (max-width: 768px) {
+  .ant-steps-item-active {
+    .ant-steps-item-container {
+      .ant-steps-item-icon {
+        left: 1px;
+      }
+      .ant-steps-item-content {
+        margin-left: 57px;
+      }
+    }
+  }
+
+  .ant-steps-item-container {
+    padding-left: 2px;
+  }
+
+  .ant-steps-item-tail {
+    left: -9px !important;
+  }
+}
